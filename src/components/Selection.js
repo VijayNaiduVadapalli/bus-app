@@ -13,7 +13,7 @@ export default Selection = () => {
   console.log(selectedBus);
 
   return (
-    <div>
+    <div style={{width:'200%'}} className='text-white ms-4'>
       <div>
         <p className="avlHeader">
           Selected Bus FROM <i>{search.from}</i> TO <i>{search.to}</i> ON{' '}
@@ -26,12 +26,12 @@ export default Selection = () => {
         Booking Date : <i>{search.date}</i>
       </div>
       <button
-        className="actionButton"
+        className="btn btn-primary" style={{float: 'right'}}
         onClick={(e) => navigate('/passengerInfo')}
       >
         Passenger Details{' '}
       </button>
-      <button className="actionButton alignLeft" onClick={(e) => navigate('/')}>
+      <button className="btn btn-primary alignLeft" onClick={(e) => navigate('/')}>
         Reset Search
       </button>
     </div>

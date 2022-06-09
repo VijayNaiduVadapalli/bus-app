@@ -37,15 +37,15 @@ const initialState = [
     boardingPoints: ['Koyembedu', 'Ashok Pillar', 'Guindy', 'Tambaram'],
     droppingPoints: ['Salem', 'Erode', 'Erode ByPass'],
   },
-  {
-    id: '188',
-    name: 'Mettur special Travels',
-    depatureTime: '22:30',
-    arrivalTime: '08:15',
-    fare: '1200',
-    boardingPoints: ['Koyembedu', 'Ashok Pillar', 'Guindy', 'Tambaram'],
-    droppingPoints: ['Salem', 'Erode', 'Erode ByPass'],
-  },
+  // {
+  //   id: '188',
+  //   name: 'Mettur special Travels',
+  //   depatureTime: '22:30',
+  //   arrivalTime: '08:15',
+  //   fare: '1200',
+  //   boardingPoints: ['Koyembedu', 'Ashok Pillar', 'Guindy', 'Tambaram'],
+  //   droppingPoints: ['Salem', 'Erode', 'Erode ByPass'],
+  // },
 ];
 export default (state = initialState, action) => {
   return state;

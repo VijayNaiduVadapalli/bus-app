@@ -34,91 +34,81 @@ export default function PassengerInfo() {
   };
 
   return (
-    <div>
+    <div style={{width: '150%'}} className='ms-3 text-white'>
       <div className="avlResults">
-        <div>
-          <table id="tblPassenger">
-            <tr>
-              <td width="35%"> Bus Name </td>
-              <td>
-                <input
-                  type="text"
-                  name="BusName"
-                  value={selectedBus.name}
-                  disabled
-                />
-              </td>
-            </tr>
-            <tr>
-              <td width="35%"> Bus ID </td>
-              <td>
-                <input
-                  type="text"
-                  name="BusID"
-                  value={selectedBus.id}
-                  disabled
-                />
-              </td>
-            </tr>
-            <tr>
-              <td width="35%"> Booking Date </td>
-              <td>
-                <input
-                  type="text"
-                  name="BusBookingDate"
-                  value={search.date}
-                  disabled
-                />
-              </td>
-            </tr>
-            <tr>
-              <td width="35%"> Name </td>
-              <td>
-                <input
-                  type="text"
-                  name="PassengerName"
-                  onChange={(e) => updateVaue(e)}
-                />
-              </td>
-            </tr>
-            <tr>
-              <td width="35%"> Age </td>
-              <td>
-                <input
-                  type="number"
-                  name="PassengerAge"
-                  onChange={(e) => updateVaue(e)}
-                />
-              </td>
-            </tr>
-            <tr>
-              <td width="35%"> Sex </td>
-              <td>
-                <select name="PassengerSex" onChange={(e) => updateVaue(e)}>
-                  <option vaue="M">Male</option>
-                  <option vaue="F">Female</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td width="35%"> Mobile </td>
-              <td>
-                <input
-                  type="text"
-                  name="PassengerMobile"
-                  onChange={(e) => updateVaue(e)}
-                />
-              </td>
-            </tr>
-          </table>
+        <div className='row'>
+          <div className='col-md-6'>
+          <label for="basic-url" class="form-label">Bus Name</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" value={selectedBus.name} disabled/>
+            </div>
+          </div>
+          <div className='col-md-6'>
+          <label for="BusID" class="form-label"> Bus ID</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" value={selectedBus.id} disabled/>
+            </div>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-md-6'>
+              <label for="BusBookingDate" class="form-label"> Booking Date</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" value={search.date} disabled/>
+            </div>
+          </div>
+          <div className='col-md-6'>
+            <label for="BusBookingDate" class="form-label"> Name</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" onChange={(e) => updateVaue(e)} />
+            </div>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-md-6'>
+            <label for="BusBookingDate" class="form-label"> Age </label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" onChange={(e) => updateVaue(e)} />
+            </div>
+          </div>
+          <div className='col-md-6'>
+            <label for="BusBookingDate" class="form-label"> Sex </label>
+            <div class="input-group mb-3">
+              <select name="sex" onChange={(e) => updateVaue(e)} className='form-control'>
+                      <option vaue="M">Male</option>
+                      <option vaue="F">Female</option>
+                    </select>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-md-6'>
+              <label for="BusBookingDate" class="form-label"> Mobile </label>
+              <div class="input-group mb-3">
+                <input className='form-control'
+                          type="text"
+                          name="PassengerMobile"
+                          onChange={(e) => updateVaue(e)}
+                        />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <button className="actionButton" onClick={(e) => navigate('/bookmyseats')}>
-        Select seats
-      </button>
-      <button className="actionButton alignLeft" onClick={(e) => navigate('/')}>
-        Reset Search
-      </button>
+      <div className='row'>
+        <div className='col-md-6'>
+            <button className="btn btn-primary w-100" onClick={(e) => navigate('/')}>
+            Reset Search
+          </button>
+        </div>
+        <div className='col-md-6'>
+            <button className="btn btn-primary w-100" onClick={(e) => navigate('/bookmyseats')}>
+            Select seats
+          </button>
+        </div>
+
+      </div>
+      
+      
     </div>
   );
 }

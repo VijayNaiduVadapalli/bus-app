@@ -7,7 +7,7 @@ p {
   box-sizing: border-box;
 }
 .search-container {
-  width: 35%;
+  width: 170%;
   height: 500px;
   display: flex;
   /* justify-content: center; */
@@ -54,18 +54,18 @@ p {
   border: solid coral;
 }
 
-.buses-avail-container .bus-avail {
+/* .buses-avail-container .bus-avail {
   display: flex;
   flex-direction: column;
   background: wheat;
   padding: 0 10px;
   margin-bottom: 20px;
   border-radius: 6px;
-}
+} */
 
-.buses-avail-container .bus-avail:nth-child(odd) {
+/* .buses-avail-container .bus-avail:nth-child(odd) {
   background-color: antiquewhite;
-}
+} */
 
 .d-flex {
   display: flex;
@@ -87,19 +87,18 @@ p {
   font-weight: bold;
 }
 
-.avlHeader {
+/* .avlHeader {
   background-color: rgb(115, 134, 218);
   padding: 50px 20px;
   color: black;
   font-size: 18px;
   font-weight: bold;
   border-radius: 10px;
-}
+} */
 
 .avlResults {
-  background-color: rgb(130, 161, 139);
+  background-color: rgba(0,0,0, 0.4);
   padding: 50px 20px;
-  color: black;
   font-size: 18px;
   font-weight: bold;
   border-radius: 10px;
@@ -151,7 +150,6 @@ td {
 
 .routing {
   position: absolute;
-  top: 0;
+  top: 100px;
   left: 0;
-  width: 80%;
 }

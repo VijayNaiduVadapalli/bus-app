@@ -14,25 +14,22 @@ export default function () {
   };
 
   return (
-    <div>
-      <h1 class="text-center">Bus Availability </h1>
-      <h4>
+    <div style={{width: '150%'}}>
+      <h1 class="text-center text-white">Bus Availability </h1>
+      <h4 className='text-white ms-3'>
         Buses for {search.from} to {search.to} on {search.date}
       </h4>
-      <div class="buses-avail-container">
+      <div class="buses-avail-container ms-3">
         {buses.map((bus) => {
           return (
-            <div class="bus-avail" onClick={() => selectBus(bus)}>
-              <div class="d-flex">
-                <p class="name">{bus.name}</p>
-                <p class="fare">Fare:{bus.fare}</p>
+              <div class="card mt-3 text-white" style={{backgroundColor:'rgba(0,0,0, 0.4)'}} >
+                <h5 class="card-header">{bus.name}</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Fare: {bus.fare}</h5>
+                  <p class="card-text"><b>Arrl Time: </b> {bus.arrivalTime} <b className='ms-5'>Dept Time: </b> {bus.depatureTime}</p>
+                  <a href="#" class="btn btn-primary" onClick={() => selectBus(bus)}>Book Now</a>
+                </div>
               </div>
-              <div class="d-flex">
-                <p>Arrl Time: {bus.arrivalTime}</p>
-                <p>Dept Time: {bus.depatureTime}</p>
-                <p>{bus.offers}</p>
-              </div>
-            </div>
           );
         })}
       </div>
