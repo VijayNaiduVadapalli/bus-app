@@ -1,0 +1,157 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+* {
+  box-sizing: border-box;
+}
+.search-container {
+  width: 35%;
+  height: 500px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+}
+.search-container .form-group {
+  width: 200px;
+  margin-bottom: 10px;
+}
+.search-container input {
+  width: 200px;
+  padding: 5px;
+}
+/* .search-container button {
+  margin-top: 20px;
+  border: none;
+  width: 120px;
+  padding: 10px;
+  background-color: green;
+  color: whitesmoke;
+}
+
+.search-container button:hover {
+  background-color: burlywood;
+  color: black;
+  cursor: pointer;
+} */
+
+.was-validated input:invalid {
+  background-color: lightpink;
+  border: solid red;
+}
+
+.error-alert {
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: lightpink;
+  border: solid coral;
+}
+
+.buses-avail-container .bus-avail {
+  display: flex;
+  flex-direction: column;
+  background: wheat;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.buses-avail-container .bus-avail:nth-child(odd) {
+  background-color: antiquewhite;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.goBack {
+  float: right;
+  color: rgb(20, 252, 59);
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.avlHeader {
+  background-color: rgb(115, 134, 218);
+  padding: 50px 20px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.avlResults {
+  background-color: rgb(130, 161, 139);
+  padding: 50px 20px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.actionButton {
+  margin-top: 20px;
+  padding: 10px;
+  float: right;
+  background-color: rgb(65, 110, 54);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.alignLeft {
+  float: left;
+  cursor: pointer;
+}
+
+.alignRight {
+  float: right;
+  cursor: pointer;
+}
+
+.rowTen {
+  padding-top: 5px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+td {
+  width: 150px;
+  text-align: left;
+  padding: 5px;
+}
+
+.app-main {
+  height: 1050px;
+  background-image: url(../src/assets/bus_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1600px 1050px;
+  position: relative;
+  filter: blur(4px);
+}
+
+.routing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+}
