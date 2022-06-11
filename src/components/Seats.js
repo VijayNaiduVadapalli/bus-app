@@ -5,15 +5,15 @@ const Seats = (props) => {
 
     return (
         <div className="section">
-            {props.values.map(seat => {
+            {props.values.map(seat => {   //iterate through seats
                 const isAvailable = props.availableSeats.includes(seat);
                 const isBooked = props.bookedSeats.includes(seat);
                 let seatClass;
                 let marginLeft;
-                if (!isAvailable) {
+                if (!isAvailable) {       //disabled
                     seatClass = 'disabled';
                 }
-                if (isBooked) {
+                if (isBooked) {         
                     seatClass = 'booked';
                 }
                 return <div className={seatClass + ' ' + (seat.charAt(seat.length - 1) == 'C' ? 'margin-left10' : '')} onClick={props.addSeat} key={seat}>

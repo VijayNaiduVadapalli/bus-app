@@ -22,6 +22,7 @@ export default class App extends React.Component {
   }
 }
 
+
 /*
 
 React-Node Bus Ticket booking
@@ -38,9 +39,5 @@ Phonenumber is not there, we can ask to provide a password, firstname, lastname 
 
 Payment screen - 
 
-Confirmation Screen
-
-Booking History Screen - first login and then show this.
-
-
 */
+
