@@ -29,14 +29,14 @@ export default class Login extends React.Component {
         <div class="form-group mb-3">
           <label>
             Username:
-            <input required type="text" name="username" class="form-control mt-2" onChange={e => this.handleInputChange(e)} />
+            <input data-testid="userName-input"required type="text" name="username" class="form-control mt-2" onChange={e => this.handleInputChange(e)} />
           </label>
         </div>
 
         <div class="form-group mb-3">
           <label>
             Password:
-            <input required type="password" name="password" class="form-control mt-2" onChange={e => this.handleInputChange(e)} />
+            <input data-testid="password-input" required type="password" name="password" class="form-control mt-2" onChange={e => this.handleInputChange(e)} />
           </label>
         </div>
 

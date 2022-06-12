@@ -45,7 +45,7 @@ export default () => {
       <div class="form-group">
         <label>
           From:
-          <input required type="text" name="from" class="form-control" onChange={e => setFrom(e.target.value)} data-testid="From-Input"/>
+          <input data-testid="From-Input" required type="text" name="from" class="form-control" onChange={e => setFrom(e.target.value)} />
         </label>
       </div>
 

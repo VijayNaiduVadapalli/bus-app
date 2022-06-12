@@ -5,4 +5,5 @@ import details from '../reducers/details';
 import handleBus from '../reducers/handleBus'
 
 const reducers = combineReducers({ search, buses, details, handleBus });
-export const store = createStore(reducers);
+const store = createStore(reducers);
+export default store;
